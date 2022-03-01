@@ -1,0 +1,214 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0%;
+}
+#purple-bgcolor{
+    background-color: #7674e2;
+    min-width: 60rem;
+}
+/*Navbar Styling*/
+#navbar {
+    height: 80%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    display: inline-block;
+    width: fit-content;
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+#logo-text-designing{
+    font-size: 4.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Arvo', serif;
+}
+
+#categories-about-contact-containig-div {
+    display: inline-block;
+    width: 57rem;
+    position: relative;
+    top: -0.4rem;
+}
+
+.categories-about-contact-text-designing{
+    display: inline;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+    margin-left: 10%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+.categories-about-contact-text-designing:hover{
+    text-decoration: underline;
+    font-size: 2.1rem;
+}
+
+/*THE First look image containing text and gif*/
+#first-view-text-and-gif {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 5rem 0;
+}                   
+#intro-text {
+    display: inline-block;
+    height: fit-content;
+    max-width: 40rem;
+    width: 33%;
+}
+#main-heading{
+    font-size: 6rem;
+    color: white;
+    margin-top: 0%;
+    font-family: 'Quicksand', sans-serif;
+}
+#desc-of-main-heading{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#last-para-below-heading{
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#animated-gif-div {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 40%;
+}
+#animated-gif-styling{
+    height: 60%;
+    min-height: 20%;
+    width: 60%;
+    min-width: 20%;
+    margin-left: 10%;
+    border-radius: 5px;
+    border: 0.2rem solid gray
+}
+
+/*Dont Change the upper settings now*/
+    /*Second VIew page*/
+#second-view-to-redirect-button{
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    height: 50rem;
+}
+#box-containing-redirection-content{
+    margin: auto;
+    background-color:  #7674e2;
+    opacity: 0.8;
+    height: 25rem;
+    width: 40rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#inside-box-first-line-in-h3{
+    font-size: 3rem;
+    letter-spacing: 0.1px;
+    word-spacing: 0.1px;
+    
+}
+#inside-box-third-line-in-a-tag{
+    font-size: 2.7rem;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s ease-in;
+}
+#inside-box-third-line-in-a-tag:hover{
+    font-size: 2.9rem;
+    text-decoration:underline;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width: 998px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 762px) {
+    html{
+        font-size: 45%;
+    }
+}
+@media screen and (max-width: 588px) and (min-width: 546px){
+    #purple-bgcolor{
+        min-width: 600px;
+        background-color: #7674e2;
+    }   
+}
+
+@media(max-width: 588px){
+    html{
+        font-size: 45%;
+    }
+
+    
+    #purple-bgcolor{
+        background-color: #7674e2;
+        width: fit-content;
+    }
+    #navbar {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:flex-start;
+
+    }
+    #categories-about-contact-containig-div {
+        visibility:hidden;
+    }
+
+    #first-view-text-and-gif {
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        justify-content: center;
+        padding: 0rem 0;
+    }
+    #main-heading{
+        font-size: 6rem;
+        color: white;
+        margin-top: 0%;
+        margin-left: 20%;
+        font-family: 'Quicksand', sans-serif;
+        width: 40rem;
+        text-align: left;
+    }
+    #desc-of-main-heading{
+        font-size: 4rem;
+        width: 40rem;
+        margin-left: 20%;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    #last-para-below-heading{
+        font-size: 2.2rem;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        width: 40rem;
+        margin-left: 20%;
+    }
+    #animated-gif-div {
+        display: contents;
+        text-align: center;
+        width: 90%;
+        height: 40%;
+    }
+}
